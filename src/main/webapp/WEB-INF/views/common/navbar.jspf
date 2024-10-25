@@ -1,0 +1,100 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">AlphaShop</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <!-- Blocco dei menu -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="<spring:url value="/welcome" />" >
+          <span class="material-icons md-home" title="home" aria-hidden="true"></span>
+          Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" title="Prodotti"  href="<spring:url value="/articoli" />" >
+          <span class="material-icons md-archive" title="prodotti" aria-hidden="true"></span>
+          Prodotti
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" title="Promozioni" href="<spring:url value="/promozioni" />" >
+          <span class="material-icons md-campaign" title="promozioni" aria-hidden="true"></span>
+          Promozioni
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" title="Fidelity" href="<spring:url value="/fidelity" />" >
+          <span class="material-icons md-card_membership" title="Fidelity" aria-hidden="true"></span>
+          Fidelity
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" title="Ordini" href="<spring:url value="/ordini" />" >
+          <span class="material-icons md-local_grocery_store" title="Ordini" aria-hidden="true"></span>
+          Ordini
+          </a>
+        </li>
+      </ul>
+
+      <!-- Motore di Ricerca -->
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      </form>
+
+      <div class="col-nav">
+        <button class="btn btn-icon btn-mobile me-auto" data-trigger="#offcanvas_aside"> <i class="md-28 material-icons md-menu"></i> </button>
+        <ul class="nav">
+		  
+		  <!--Dark Mode -->	
+          <li class="nav-item">
+            <a class="nav-link btn-icon" onclick="darkmode(this)" href="#">
+              <span class="material-icons md-nights_stay" title="Dark mode"></span>
+            </a>
+          </li>
+          
+          <!-- Avviso Notifiche -->
+          <li class="nav-item">
+            <a class="nav-link btn-icon" href="#">
+             <div class="bell">
+             	<i class="material-icons md-notifications_active"></i>
+             	 <div class="bell__count">
+             	 	<div class="bell__count__digits">
+             	 	 0
+             	 	</div>
+             	 </div>
+             </div>
+            </a>
+          </li>
+          
+          <!-- Cambio Lingua -->
+          <li class="nav-item">
+            <a class="nav-link" href="#"> English </a>
+          </li>
+
+          <!-- Avatar e Menu Utente -->
+          <li class="dropdown nav-item">
+           	<a class="dropdown-toggle" data-bs-toggle="dropdown" href="#">
+           	   <img class="img-xs rounded-circle" src="<c:url value="/static/images/avatars/offline_user.png" />" alt="User" width="35" height="35">
+			</a>
+			<div class="dropdown-menu dropdown-menu-end">
+			  <a class="dropdown-item" href="/login">Accedi</a>
+			  <a class="dropdown-item" href="/signup">Registrati</a>
+			  <a class="dropdown-item"  href="/user/settings">Settings</a>
+			  <hr class="dropdown-divider">
+			  <a class="dropdown-item text-danger" href="/logout">Logout</a>
+			</div>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>

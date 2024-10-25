@@ -1,0 +1,50 @@
+.btn-light {
+  background-color: #fff;
+  border-color: rgba(108, 117, 125, 0.25);
+  margin-left: 2%;
+  margin-right: 2%;
+
+}
+
+.table thead th {
+  color: #adb5bd;
+  font-weight: 400;
+}
+
+.dropdown {
+  display: inline-block;
+
+}
+
+.table thead th {
+  color: #adb5bd;
+  font-weight: 400;
+}
+
+.table-lg td, .table-lg th {
+  padding: 0.8rem 1rem;
+}
+
+ul.row, ul.row-sm {
+  list-style: none;
+  padding: 0;
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: azure;
+}
+
+
+.tbl-string {
+  padding-top: 16px;
+  font-size: 103%;
+}
+
+.infoBadge {
+  font-size: 110%;
+  font-weight: bold;
+}
+
+.newart {
+  margin-left: 5px;
+}
